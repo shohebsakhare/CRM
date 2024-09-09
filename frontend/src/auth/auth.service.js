@@ -22,6 +22,7 @@ export const login = async ({ loginData }) => {
     );
     return data;
   } catch (error) {
+    console.log(error);
     return errorHandler(error);
   }
 };
